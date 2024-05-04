@@ -1,3 +1,5 @@
+package org.supermarkets.hiperdino.elements;
+
 public class Cashier {
 
     private int number;
