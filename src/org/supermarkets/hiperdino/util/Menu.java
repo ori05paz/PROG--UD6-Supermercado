@@ -20,7 +20,6 @@ public class Menu {
         try {
             choice = Integer.parseInt(option);
         } catch (NumberFormatException e) {
-            // Si el usuario ingresa un valor no válido, mostrar un mensaje de error
             JOptionPane.showMessageDialog(null, "Error: Por favor, ingrese un número válido.", "Error", JOptionPane.ERROR_MESSAGE);
         }
         return choice;
