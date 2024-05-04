@@ -1,3 +1,6 @@
+package org.supermarkets.hiperdino.elements;
+
+
 public class Cashier {
 
     private int number;
@@ -42,12 +45,9 @@ public class Cashier {
 
     @Override
     public String toString() {
-        String result = "* Número de caja: " + number + ":\n";
-        result += "* Total de clientes: " + clientQueue.size() + "\n";
-        result += "* Clientes en la fila:\n";
-        for (Client client : clientQueue) {
-        result += client.getName() + "\n";
-        }
-        return result;
+        return "Cajero{" +
+                "número =" + number +
+                ", caja abierta =" + openedBox +
+                '}';
     }
 }
