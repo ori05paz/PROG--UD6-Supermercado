@@ -1,5 +1,7 @@
 package org.supermarkets.hiperdino.management;
 
+import java.util.LinkedList;
+
 public class Supermarket {
     
     private Cashier cashier;
@@ -18,4 +20,12 @@ public class Supermarket {
         new Product("Refresco", 1.0),
         new Product("Chocolate", 2.5)
     };
+
+
+    public Supermarket(Cashier cashier) {
+        this.cashier = new Cashier(1);
+        this.clientQueue = new LinkedList<>();
+    }
+
+    
 }
