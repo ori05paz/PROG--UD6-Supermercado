@@ -48,4 +48,9 @@ public class Client {
     public void emptyShoppingBasket() {
         shoppingBasket.clear();
     }
+
+    public static String generateNames() {
+        String[] names = {"Juan", "María", "Pedro", "Ana", "Luis", "Laura", "Carlos", "Sofía", "David", "Elena"};
+        return names[new Random().nextInt(names.length)];
+    }
 }
