@@ -35,5 +35,17 @@ public class Client {
         this.shoppingBasket = shoppingBasket;
     }
 
-    
+    public void addProduct(Product product) {
+        shoppingBasket.push(product);
+    }
+
+    public void removeProduct() {
+        if (!shoppingBasket.isEmpty()) {
+            shoppingBasket.pop();
+        }
+    }
+
+    public void emptyShoppingBasket() {
+        shoppingBasket.clear();
+    }
 }
