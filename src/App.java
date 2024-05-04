@@ -1,3 +1,9 @@
+import javax.swing.JOptionPane;
+
+import org.supermarkets.hiperdino.elements.Cashier;
+import org.supermarkets.hiperdino.management.Supermarket;
+import org.supermarkets.hiperdino.util.Menu;
+
 public class App {
     public static void main(String[] args) {
         
