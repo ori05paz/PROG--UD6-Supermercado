@@ -39,4 +39,15 @@ public class Cashier {
     public boolean isOpenedBox() {
         return openedBox;
     }
+
+    @Override
+    public String toString() {
+        String result = "* Número de caja: " + number + ":\n";
+        result += "* Total de clientes: " + clientQueue.size() + "\n";
+        result += "* Clientes en la fila:\n";
+        for (Client client : clientQueue) {
+        result += client.getName() + "\n";
+        }
+        return result;
+    }
 }
