@@ -10,10 +10,10 @@ public class Client {
     private Stack<Product> shoppingBasket;
     private static int counter = 0;
     
-    public Client(String name, int id, Stack<Product> shoppingBasket) {
+    public Client(String name) {
         this.name = name;
-        this.id = id;
-        this.shoppingBasket = shoppingBasket;
+        this.id = ++counter;
+        this.shoppingBasket = new Stack<>();
     }
 
     public String getName() {
