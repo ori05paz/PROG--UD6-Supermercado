@@ -18,5 +18,25 @@ public class Cashier {
         this.number = number;
     }
 
-    
+    public void openBox() {
+        if (!openedBox) {
+            openedBox = true;
+            System.out.println("Caja " + number + " abierta.");
+        } else {
+            throw new IllegalStateException("La caja " + number + " ya está abierta.");
+        }
+    }
+
+    public void closeBox() {
+        if (openedBox) {
+            openedBox = false;
+            System.out.println("Caja " + number + " cerrada.");
+        } else {
+            throw new IllegalStateException("La caja " + number + " ya está cerrada.");
+        }
+    }
+
+    public boolean isOpenedBox() {
+        return openedBox;
+    }
 }
