@@ -3,7 +3,12 @@ package org.supermarkets.hiperdino.elements;
 public class Product {
 
     private String name;
-    private String price;
+    private double price;
+
+    public Product(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
 
     
     
