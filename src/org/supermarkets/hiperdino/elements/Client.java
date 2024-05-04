@@ -1,3 +1,8 @@
+package org.supermarkets.hiperdino.elements;
+
+import java.util.Random;
+import java.util.Stack;
+
 public class Client {
     
     private String name;
@@ -52,5 +57,19 @@ public class Client {
     public static String generateNames() {
         String[] names = {"Juan", "María", "Pedro", "Ana", "Luis", "Laura", "Carlos", "Sofía", "David", "Elena"};
         return names[new Random().nextInt(names.length)];
+    }
+
+    @Override
+    public String toString() {
+        String result = "Cliente\n";
+        result += "===================================\n";
+        result += "* nombre: " + name + "\n";
+        result += "* Total de productos: " + shoppingBasket.size() + "\n";
+        result += "* Lista de artículos en la cesta:\n";
+        for (Product product : shoppingBasket) {
+            result += product.getName() + "\n";
+        }
+        result += "===================================\n";
+        return result;
     }
 }
